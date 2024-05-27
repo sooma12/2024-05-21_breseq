@@ -2,7 +2,7 @@
 #SBATCH --partition=short
 #SBATCH --job-name=breseq_array
 #SBATCH --time=04:00:00
-#SBATCH --array=1-22%5
+#SBATCH --array=1-11%12
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=100G
 #SBATCH --output=/work/geisingerlab/Mark/breseq/2024-05-21_breseq/logs/%x_%A_%a.out
