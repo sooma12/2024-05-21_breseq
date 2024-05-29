@@ -3,8 +3,6 @@
 # Generate a sample sheet containing
 # Usage: `bash 2_make_sample_sheet.sh`
 
-# IMPORTANT NOTE: file paths to fastq and sample_sheet.txt are hard-coded. Sample sheet construction code relies on specific file paths (see lines 29-34).
-
 # Location of fastq files
 # Output filepath; bash magic below will make individual output filepaths by strain ID
 

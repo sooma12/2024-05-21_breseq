@@ -37,12 +37,14 @@ conda config --set channel_priority strict
 conda install -p /work/geisingerlab/conda_env/breseq_env breseq
 ```
 
-
 ## Get data
 Downloaded data via Box to shared desktop (downloads "Illumina DNA Reads.zip")
 Renamed downloaded zip file to: "Illumina_DNA_Reads_2024-05-21.zip"
 Copy data to Discovery: `scp ./Illumina_DNA_Reads_2024-05-21.zip soo.m@xfer.discovery.neu.edu:/work/geisingerlab/Mark/breseq/2024-05-21_breseq`
-Unzipped using `unzip <zipfile>`
+
+Request compute node before proceeding!
+
+Unzip using `unzip <zipfile>`
 (Note, sometimes trying to unzip this file gives a "possible zip bomb" error.  This basically means the big zip file is too big.  Solve this by downloading the files several at a time (<4 GB files seems fine))
 
 Move gzipped files to ./input/gz (mkdir -p if needed)
@@ -56,7 +58,7 @@ Want .fastq files in ./input/fastq
 `mkdir -p ./input/fastq` (from base directory)
 In the gz directory:
 `gunzip *.gz`
-Then move files.  From base directory::
+Then move files.  From base directory:
 `mv ./input/gz/*.fastq ./input/fastq` 
 
 Edit "config.cfg" file to ensure that file paths and any names are correct.
@@ -65,7 +67,7 @@ Edit "config.cfg" file to ensure that file paths and any names are correct.
 
 ## Fastqc
 From top directory, run fastqc using:
-`sbatch scripts/sbatch_fastqc_2024-03-15.sh`
+`sbatch scripts/1_sbatch_fastqc.sh`
 
 Interpreting FastQC
 https://hbctraining.github.io/Intro-to-rnaseq-hpc-salmon/lessons/qc_fastqc_assessment.html
