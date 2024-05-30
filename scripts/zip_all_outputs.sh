@@ -13,7 +13,7 @@ source ./config.cfg
 #     ../output
 
 # Make a file with the list of all 'MSA#/output' filepaths
-find $CAT_OUT_PATH -maxdepth 2 -name "output" > dirs.list
+find $BRESEQ_OUTPATH -maxdepth 2 -name "output" > dirs.list
 
 paste dirs.list | while read dir ;
 do
@@ -22,10 +22,12 @@ done
 
 mkdir -p output_zips
 
-find $CAT_OUT_PATH maxdepth=3 -name *.zip > zips.list
+find $BRESEQ_OUTPATH -maxdepth 3 -name '*.zip' > zips.list
 
 paste zips.list | while read zip ;
 do
-    file_base=$(basename ${zip})
+    file_base=$(echo ${zip} | cut -f2 -d"/")
     mv ${zip} output_zips/${file_base}_output.zip
 done
+
+rm dirs.list zips.list
