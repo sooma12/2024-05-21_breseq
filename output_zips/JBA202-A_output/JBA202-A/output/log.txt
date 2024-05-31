@@ -1,8 +1,0 @@
-Thu May 30 09:39:11 2024
-
-breseq -r /work/geisingerlab/Mark/REF_GENOMES/AB_17978_ega83/EGA83ref.gff3 -r /work/geisingerlab/Mark/REF_GENOMES/AB_17978_ega83/CP000522.gbk -r /work/geisingerlab/Mark/REF_GENOMES/AB_17978_ega83/CP000523.gbk -r /work/geisingerlab/Mark/REF_GENOMES/AB_17978_ega83/CP012005.gbk -o /work/geisingerlab/Mark/breseq/2024-05-21_breseq/output/breseq/JBA202-A /work/geisingerlab/Mark/breseq/2024-05-21_breseq/input/fastq/JBA202-A_S73_R1_001.fastq /work/geisingerlab/Mark/breseq/2024-05-21_breseq/input/fastq/JBA202-A_S73_R2_001.fastq
-
-Thu May 30 09:41:14 2024
-
-breseq -r /work/geisingerlab/Mark/REF_GENOMES/AB_17978_ega83/EGA83ref.gff3 -r /work/geisingerlab/Mark/REF_GENOMES/AB_17978_ega83/CP000522.gbk -r /work/geisingerlab/Mark/REF_GENOMES/AB_17978_ega83/CP000523.gbk -r /work/geisingerlab/Mark/REF_GENOMES/AB_17978_ega83/CP012005.gbk -o /work/geisingerlab/Mark/breseq/2024-05-21_breseq/output/breseq/JBA202-A /work/geisingerlab/Mark/breseq/2024-05-21_breseq/input/fastq/JBA202-A_S73_R1_001.fastq /work/geisingerlab/Mark/breseq/2024-05-21_breseq/input/fastq/JBA202-A_S73_R2_001.fastq
-
