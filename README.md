@@ -65,6 +65,10 @@ Edit "config.cfg" file to ensure that file paths and any names are correct.
 
 `mkdir ./logs` for slurm log files
 
+Note, all files from Seqcenter were formatted like "MSA223_1_...", with an underscore separating the strain name and the clone number.
+This borked part of the breseq code.  Dealt with this using `for file in ./*; do mv -v -- "$file" "${file/_/-}"; done` to change the first _ in each file to a -.
+I then renamed the YDA94 and YDA99 samples to revert this change, as those were single clones.
+
 ## Fastqc
 From top directory, run fastqc using:
 `sbatch scripts/1_sbatch_fastqc.sh`

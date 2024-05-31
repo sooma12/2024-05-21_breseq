@@ -1,0 +1,290 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Marginal Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.38.1&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<p>
+<table border="0" cellspacing="1", cellpadding="3">
+<tr><th colspan="12" align="left" class="read_alignment_header_row">Marginal read alignment evidence (highest frequency 20 of 39 shown, sorted by frequency from high to low)</th></tr>
+<tr>
+<th>&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th colspan="2">position</th>
+<th>ref</th>
+<th>new</th>
+<th>freq</th>
+<th>score&nbsp;(cons/poly)</th>
+<th>reads</th>
+<th>annotation</th>
+<th>genes</th>
+<th width="100%">product</th>
+</tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_29.html">*</a></td><td align="center">NZ_CP012004</td><td align="right">1,611,384</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">71.2%
+</td><td align="center">106.6
+/&nbsp;118.2
+</td><td align="center">119</td><td align="center"><font class="snp_type_nonsynonymous">V152L</font>&nbsp;(<font class="mutation_in_codon">G</font>TC&rarr;<font class="mutation_in_codon">C</font>TC)&nbsp;&Dagger;</td><td align="center"><i>ACX60_RS07530</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_44.html">*</a></td><td align="center">NZ_CP012004</td><td align="right">2,736,592</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">54.4%
+</td><td align="center">43.7
+/&nbsp;175.9
+</td><td align="center">114</td><td align="center"><font class="snp_type_nonsynonymous">S479T</font>&nbsp;(A<font class="mutation_in_codon">G</font>T&rarr;A<font class="mutation_in_codon">C</font>T)&nbsp;</td><td align="center"><i>fadH</i></td><td align="left">NADPH&#8209;dependent 2,4&#8209;dienoyl&#8209;CoA reductase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_30.html">*</a></td><td align="center">NZ_CP012004</td><td align="right">1,611,385</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">44.6%
+</td><td align="center">100.4
+/&nbsp;99.3
+</td><td align="center">130</td><td align="center"><font class="snp_type_nonsynonymous">V152A</font>&nbsp;(G<font class="mutation_in_codon">T</font>C&rarr;G<font class="mutation_in_codon">C</font>C)&nbsp;&Dagger;</td><td align="center"><i>ACX60_RS07530</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_36.html">*</a></td><td align="center">NZ_CP012004</td><td align="right">2,204,395</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">42.7%
+</td><td align="center">95.1
+/&nbsp;60.4
+</td><td align="center">84</td><td align="center">intergenic&nbsp;(&#8209;7/&#8209;252)</td><td align="center"><i>ACX60_RS10510/ACX60_RS10515</i></td><td align="left">hypothetical protein/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_48.html">*</a></td><td align="center">NZ_CP012004</td><td align="right">3,125,709</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">40.5%
+</td><td align="center">173.7
+/&nbsp;93.3
+</td><td align="center">116</td><td align="center"><font class="snp_type_nonsynonymous">G330R</font>&nbsp;(<font class="mutation_in_codon">G</font>GC&rarr;<font class="mutation_in_codon">C</font>GC)&nbsp;</td><td align="center"><i>ACX60_RS14780</i></td><td align="left">acyl&#8209;CoA dehydrogenase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_26.html">*</a></td><td align="center">NZ_CP012004</td><td align="right">1,529,192</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">40.4%
+</td><td align="center">191.9
+/&nbsp;22.5
+</td><td align="center">97</td><td align="center">intergenic&nbsp;(+51/&#8209;588)</td><td align="center"><i>ACX60_RS07100/ACX60_RS07105</i></td><td align="left">aminopeptidase N/spore Coat protein U domain family</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_50.html">*</a></td><td align="center">NZ_CP012004</td><td align="right">3,632,436</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">39.0%
+</td><td align="center">172.7
+/&nbsp;21.7
+</td><td align="center">101</td><td align="center"><font class="snp_type_nonsynonymous">L70F</font>&nbsp;(TT<font class="mutation_in_codon">A</font>&rarr;TT<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>ACX60_RS17130</i></td><td align="left">MFS transporter</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_38.html">*</a></td><td align="center">NZ_CP012004</td><td align="right">2,204,397</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">36.6%
+</td><td align="center">120.5
+/&nbsp;47.8
+</td><td align="center">84</td><td align="center">intergenic&nbsp;(&#8209;9/&#8209;250)</td><td align="center"><i>ACX60_RS10510/ACX60_RS10515</i></td><td align="left">hypothetical protein/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_37.html">*</a></td><td align="center">NZ_CP012004</td><td align="right">2,204,396</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">36.0%
+</td><td align="center">127.9
+/&nbsp;47.8
+</td><td align="center">84</td><td align="center">intergenic&nbsp;(&#8209;8/&#8209;251)</td><td align="center"><i>ACX60_RS10510/ACX60_RS10515</i></td><td align="left">hypothetical protein/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_46.html">*</a></td><td align="center">NZ_CP012004</td><td align="right">2,984,858</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">35.9%
+</td><td align="center">208.7
+/&nbsp;69.7
+</td><td align="center">110</td><td align="center">noncoding&nbsp;(344/355&nbsp;nt)</td><td align="center"><i>ACX60_RS19000</i></td><td align="left">bacterial RNase P</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_18.html">*</a></td><td align="center">NZ_CP012004</td><td align="right">682,086</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">34.4%
+</td><td align="center">211.5
+/&nbsp;11.3
+</td><td align="center">99</td><td align="center">intergenic&nbsp;(+50/+75)</td><td align="center"><i>ACX60_RS03295/ACX60_RS03300</i></td><td align="left">membrane protein/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_39.html">*</a></td><td align="center">NZ_CP012004</td><td align="right">2,349,705</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">34.2%
+</td><td align="center">87.5
+/&nbsp;44.1
+</td><td align="center">82</td><td align="center">intergenic&nbsp;(+101/&#8209;5)</td><td align="center"><i>ACX60_RS11215/ACX60_RS11220</i></td><td align="left">hypothetical protein/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_32.html">*</a></td><td align="center">NZ_CP012004</td><td align="right">1,847,597</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">33.3%
+</td><td align="center">186.4
+/&nbsp;50.4
+</td><td align="center">95</td><td align="center"><font class="snp_type_nonsynonymous">P121A</font>&nbsp;(<font class="mutation_in_codon">C</font>CC&rarr;<font class="mutation_in_codon">G</font>CC)&nbsp;&Dagger;</td><td align="center"><i>ACX60_RS08700</i></td><td align="left">LysR family transcriptional regulator</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_35.html">*</a></td><td align="center">NZ_CP012004</td><td align="right">2,204,394</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">33.0%
+</td><td align="center">127.7
+/&nbsp;43.8
+</td><td align="center">91</td><td align="center">intergenic&nbsp;(&#8209;6/&#8209;253)</td><td align="center"><i>ACX60_RS10510/ACX60_RS10515</i></td><td align="left">hypothetical protein/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_31.html">*</a></td><td align="center">NZ_CP012004</td><td align="right">1,847,596</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">32.2%
+</td><td align="center">188.9
+/&nbsp;48.7
+</td><td align="center">95</td><td align="center"><font class="snp_type_nonsynonymous">P121R</font>&nbsp;(C<font class="mutation_in_codon">C</font>C&rarr;C<font class="mutation_in_codon">G</font>C)&nbsp;&Dagger;</td><td align="center"><i>ACX60_RS08700</i></td><td align="left">LysR family transcriptional regulator</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_43.html">*</a></td><td align="center">NZ_CP012004</td><td align="right">2,656,953</td><td align="right">0</td><td align="center">T</td><td align="center">G</td><td align="right">31.9%
+</td><td align="center">256.8
+/&nbsp;12.8
+</td><td align="center">121</td><td align="center"><font class="snp_type_nonsense">L180*</font>&nbsp;(T<font class="mutation_in_codon">T</font>A&rarr;T<font class="mutation_in_codon">G</font>A)&nbsp;</td><td align="center"><i>ACX60_RS12725</i></td><td align="left">transferase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_28.html">*</a></td><td align="center">NZ_CP012004</td><td align="right">1,587,008</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">31.8%
+</td><td align="center">198.6
+/&nbsp;23.6
+</td><td align="center">111</td><td align="center"><font class="snp_type_nonsynonymous">H10Q</font>&nbsp;(CA<font class="mutation_in_codon">T</font>&rarr;CA<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>ACX60_RS07355</i></td><td align="left">FMN&#8209;binding glutamate synthase family protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_23.html">*</a></td><td align="center">NZ_CP012004</td><td align="right">1,120,913</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">31.5%
+</td><td align="center">189.9
+/&nbsp;10.1
+</td><td align="center">89</td><td align="center"><font class="snp_type_nonsense">L332*</font>&nbsp;(T<font class="mutation_in_codon">T</font>A&rarr;T<font class="mutation_in_codon">G</font>A)&nbsp;</td><td align="center"><i>ACX60_RS05270</i></td><td align="left">membrane protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_52.html">*</a></td><td align="center">NZ_CP012004</td><td align="right">3,742,058</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">30.2%
+</td><td align="center">263.3
+/&nbsp;21.6
+</td><td align="center">96</td><td align="center"><font class="snp_type_nonsense">L375*</font>&nbsp;(T<font class="mutation_in_codon">T</font>A&rarr;T<font class="mutation_in_codon">G</font>A)&nbsp;</td><td align="center"><i>ACX60_RS17660</i></td><td align="left">type VI secretion system protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_51.html">*</a></td><td align="center">NZ_CP012004</td><td align="right">3,632,481</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">29.5%
+</td><td align="center">215.5
+/&nbsp;10.0
+</td><td align="center">95</td><td align="center"><font class="snp_type_nonsynonymous">L85F</font>&nbsp;(TT<font class="mutation_in_codon">A</font>&rarr;TT<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>ACX60_RS17130</i></td><td align="left">MFS transporter</td></tr>
+</table>
+
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Marginal new junction evidence (sorted from low to high skew)</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_63.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_63.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP012004</td>
+<td align="center" class="junction_gene">2597134&nbsp;=</td><td align="center" class="junction_gene">118 (1.060)</td><td rowspan="2" align="center">6 (0.060)</td>
+<td rowspan="2" align="center">5/248</td>
+<td rowspan="2" align="center">7.9</td>
+<td rowspan="2" align="center">5.8%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+65/&#8209;222)</td>
+<td align="center" class="junction_gene"><i>ACX60_RS12340/ACX60_RS12345</i></td>
+<td class="junction_gene">alanine&#8209;&#8209;tRNA ligase/alpha/beta hydrolase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_63.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP012004</td>
+<td align="center" class="junction_gene">=&nbsp;2639959</td>
+<td align="center" class="junction_gene">95 (1.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+208/&#8209;2)</td>
+<td align="center" class="junction_gene"><i>ACX60_RS12640/ACX60_RS12645</i></td>
+<td class="junction_gene">hypothetical protein/aspartate kinase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_61.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_61.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP012004</td>
+<td align="center" class="junction_gene">131179&nbsp;=</td><td align="center" class="junction_gene">78 (0.700)</td><td rowspan="2" align="center">7 (0.070)</td>
+<td rowspan="2" align="center">4/246</td>
+<td rowspan="2" align="center">8.5</td>
+<td rowspan="2" align="center">8.9%</td>
+<td align="center" class="junction_gene">coding&nbsp;(106/183&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>ACX60_RS00600</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_61.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP012004</td>
+<td align="center" class="junction_gene">=&nbsp;131175</td>
+<td align="center" class="junction_gene">78 (0.830)</td><td align="center" class="junction_gene">coding&nbsp;(110/183&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>ACX60_RS00600</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_62.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_62.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP012004</td>
+<td align="center" class="junction_gene">2342237&nbsp;=</td><td align="center" class="junction_gene">90 (0.810)</td><td rowspan="2" align="center">5 (0.050)</td>
+<td rowspan="2" align="center">4/286</td>
+<td rowspan="2" align="center">9.7</td>
+<td rowspan="2" align="center">5.2%</td>
+<td align="center" class="junction_gene">coding&nbsp;(485/1236&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>ACX60_RS11185</i></td>
+<td class="junction_gene">stress&#8209;induced protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_62.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP012004</td>
+<td align="center" class="junction_gene">=&nbsp;2342239</td>
+<td align="center" class="junction_gene">92 (0.840)</td><td align="center" class="junction_gene">coding&nbsp;(483/1236&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>ACX60_RS11185</i></td>
+<td class="junction_gene">stress&#8209;induced protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_56.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_56.html">?</a></td>
+<td rowspan="1" class="junction_gene">CP000522</td>
+<td align="center" class="junction_gene">=&nbsp;11251</td><td align="center" class="junction_gene">673 (0.910)</td><td rowspan="2" align="center">13 (0.010)</td>
+<td rowspan="2" align="center">11/258</td>
+<td rowspan="2" align="center">19.5</td>
+<td rowspan="2" align="center">1.1%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;528/+825)</td>
+<td align="center" class="junction_gene"><i>A1S_3469/A1S_3470</i></td>
+<td class="junction_gene">Diaminopimelate decarboxylase/regulatory protein LysR</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_56.html">?</a></td><td rowspan="1" class="junction_gene">CP000523</td>
+<td align="center" class="junction_gene">=&nbsp;5242</td>
+<td align="center" class="junction_gene">1836 (0.970)</td><td align="center" class="junction_gene">intergenic&nbsp;(+109/&#8209;955)</td>
+<td align="center" class="junction_gene"><i>A1S_3474/A1S_3475</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_55.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_55.html">?</a></td>
+<td rowspan="1" class="junction_gene">CP000522</td>
+<td align="center" class="junction_gene">11236&nbsp;=</td><td align="center" class="junction_gene">663 (0.900)</td><td rowspan="2" align="center">8 (0.010)</td>
+<td rowspan="2" align="center">6/258</td>
+<td rowspan="2" align="center">23.5</td>
+<td rowspan="2" align="center">0.66%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;513/+840)</td>
+<td align="center" class="junction_gene"><i>A1S_3469/A1S_3470</i></td>
+<td class="junction_gene">Diaminopimelate decarboxylase/regulatory protein LysR</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_55.html">?</a></td><td rowspan="1" class="junction_gene">CP000523</td>
+<td align="center" class="junction_gene">5259&nbsp;=</td>
+<td align="center" class="junction_gene">1836 (0.970)</td><td align="center" class="junction_gene">intergenic&nbsp;(+126/&#8209;938)</td>
+<td align="center" class="junction_gene"><i>A1S_3474/A1S_3475</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+</table>
+</body></html>
